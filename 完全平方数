@@ -1,0 +1,20 @@
+//一个整数，它加上 100 后是一个完全平方数，再加上 168 又是一个完全平方数，请问该数是多少？
+#include <stdio.h>
+#include "math.h"
+extern void s();
+int main(void) {
+    
+    s();
+    return 0;
+}
+
+void s(){
+    for(int i;i<1e6;i++){
+        int x = sqrt(i+100);
+        int y = sqrt(i+268);
+        if(x*x==i+100&&y*y==i+268){
+            printf("%d\n",i);
+        }
+    }
+}
+
